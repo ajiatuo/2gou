@@ -14,6 +14,7 @@
 [GitHub - RT622](https://github.com/RT622/2gou)
 
 1. **<font style="color:#2F8EF4;">创建应用</font>**
-<center>![](https://blog.2gou.ren/blogs/yysuni/b48dc5991141a949.webp)</center>
 
-1.点击自己的【头像】找到【设置】，进入【设置】页面，然后选择左侧栏最下面的【开发者选项】
+<!-- 这是一张图片，ocr 内容为： -->
+![1.点击自己的【头像】找到【设置】，进入【设置】页面，然后选择左侧栏最下面的【开发者选项】](https://cdn.nlark.com/yuque/0/2026/png/54515742/1769319780910-6f8da314-008e-46f2-a2ce-f0cabfb19701.png)
+
