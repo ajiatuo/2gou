@@ -222,12 +222,12 @@
     "category": "游戏",
     "downloadLinks": [
       {
-        "name": "豆包网盘",
-        "url": "https://www.doubao.com/drive/s/47e7bc357d6888b9"
-      },
-      {
         "name": "百度网盘",
         "url": "https://pan.baidu.com/s/1N3twYW3JBzAVnQ3Aw062Kg?pwd=2gou"
+      },
+      {
+        "name": "豆包网盘",
+        "url": "https://feishu.doubao.com/drive/shr/S4xEf1YnPlWBJhdLqcjcnhhvnmf"
       }
     ],
     "passwordProtected": false,
