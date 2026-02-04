@@ -1,5 +1,6 @@
 import useSWR from 'swr'
 import { useAuthStore } from '@/hooks/use-auth'
+import { useConfigStore } from '@/app/(home)/stores/config-store'
 import type { BlogIndexItem } from '@/app/blog/types'
 
 export type { BlogIndexItem } from '@/app/blog/types'
@@ -37,8 +38,23 @@ export function useBlogIndex() {
 
 export function useLatestBlog() {
 	const { items, loading, error } = useBlogIndex()
+	const { siteContent } = useConfigStore()
 
-	const latestBlog = items.length > 0 ? items.sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime())[0] : null
+	// 过滤掉加密分类和密码保护的文章
+	const filteredItems = items.filter(item => {
+		// 过滤掉文章级密码保护的文章
+		if (item.passwordProtected) {
+			return false
+		}
+		// 过滤掉加密分类的文章
+		if (siteContent.enablePasswordAccess && 
+			siteContent.passwordAccessCategories?.includes(item.category || '')) {
+			return false
+		}
+		return true
+	})
+
+	const latestBlog = filteredItems.length > 0 ? filteredItems.sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime())[0] : null
 
 	return {
 		blog: latestBlog,
