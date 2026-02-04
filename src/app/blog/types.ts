@@ -9,6 +9,7 @@ export type BlogIndexItem = {
 	cover?: string
 	hidden?: boolean
 	category?: string
+	passwordProtected?: boolean
 }
 
 export type BlogConfig = {
