@@ -1,6 +1,6 @@
 'use client'
 
-import { useEffect, useState } from 'react'
+import { useEffect, useState, useMemo } from 'react'
 import Card from '@/components/card'
 import { useCenterStore } from '@/hooks/use-center'
 import { useConfigStore } from './stores/config-store'
@@ -18,12 +18,28 @@ export default function ShareCard() {
 	const hiCardStyles = cardStyles.hiCard
 	const socialButtonsStyles = cardStyles.socialButtons
 
+	// 过滤掉加密分类和密码保护的文章
+	const publicArticles = useMemo(() => {
+		return articles.filter(item => {
+			// 过滤掉文章级密码保护的文章
+			if (item.passwordProtected) {
+				return false
+			}
+			// 过滤掉加密分类的文章
+			if (siteContent.enablePasswordAccess && 
+				siteContent.passwordAccessCategories?.includes(item.category || '')) {
+				return false
+			}
+			return true
+		})
+	}, [articles, siteContent])
+
 	useEffect(() => {
-		if (articles.length > 0) {
-			const randomIndex = Math.floor(Math.random() * articles.length)
-			setRandomArticle(articles[randomIndex])
+		if (publicArticles.length > 0) {
+			const randomIndex = Math.floor(Math.random() * publicArticles.length)
+			setRandomArticle(publicArticles[randomIndex])
 		}
-	}, [articles])
+	}, [publicArticles])
 
 	if (!randomArticle) {
 		return null
