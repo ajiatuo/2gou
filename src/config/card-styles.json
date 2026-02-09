@@ -37,16 +37,16 @@
 		"height": 66,
 		"offset": 120,
 		"order": 6,
-		"offsetX": null,
-		"offsetY": null,
+		"offsetX": -497,
+		"offsetY": 179,
 		"enabled": true
 	},
 	"socialButtons": {
-		"width": 315,
-		"height": 48,
+		"width": 136,
+		"height": 50,
 		"order": 6,
-		"offsetX": null,
-		"offsetY": null,
+		"offsetX": 32,
+		"offsetY": -116,
 		"enabled": true
 	},
 	"shareCard": {
@@ -58,11 +58,11 @@
 		"enabled": true
 	},
 	"articleCard": {
-		"width": 266,
-		"height": 160,
+		"width": 361,
+		"height": 108,
 		"order": 8,
-		"offsetX": null,
-		"offsetY": null,
+		"offsetX": -169,
+		"offsetY": 167,
 		"enabled": true
 	},
 	"writeButtons": {
