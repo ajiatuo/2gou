@@ -1,8 +1,8 @@
 {
 	"meta": {
-		"title": "[贰狗日志]",
-		"description": "任贰狗的个人博客，发布一些日常收集来的软件、游戏，还有一些乱七八糟瞎折腾的研究笔记教程之类的。",
-		"username": "Ciao"
+		"title": "阿伽陀",
+		"description": "阿伽陀个人博客，资源分享",
+		"username": "阿伽陀"
 	},
 	"theme": {
 		"colorBrand": "#35bfab",
@@ -26,9 +26,13 @@
 		{
 			"id": "852eccdeaa21e3b7",
 			"url": "/images/art/852eccdeaa21e3b7.png"
+		},
+		{
+			"id": "ce3d9f146abce953",
+			"url": "/images/art/ce3d9f146abce953.webp"
 		}
 	],
-	"currentArtImageId": "852eccdeaa21e3b7",
+	"currentArtImageId": "ce3d9f146abce953",
 	"backgroundImages": [
 		{
 			"id": "",
@@ -38,28 +42,21 @@
 	"currentBackgroundImageId": "",
 	"socialButtons": [
 		{
-			"id": "github",
-			"type": "github",
-			"value": "https://github.com/RT622",
-			"label": "Github",
-			"order": 3
-		},
-		{
-			"id": "juejin",
-			"type": "qq",
-			"value": "/images/social-buttons/7f509f0a4c020a31.png",
-			"label": "稀土掘金",
-			"order": 2
-		},
-		{
 			"id": "email",
 			"type": "email",
-			"value": "Twodog@88.com",
+			"value": "565354403@qq.com",
 			"label": "",
 			"order": 1
+		},
+		{
+			"id": "button-1770660625210",
+			"type": "wechat",
+			"value": "ajiatuo",
+			"label": "",
+			"order": 2
 		}
 	],
-	"clockShowSeconds": false,
+	"clockShowSeconds": true,
 	"summaryInContent": false,
 	"isCachePem": true,
 	"hideEditButton": false,
